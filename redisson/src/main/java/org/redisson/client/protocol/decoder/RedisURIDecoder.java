@@ -40,7 +40,7 @@ public class RedisURIDecoder implements MultiDecoder<RedisURI> {
         if (parts.isEmpty()) {
             return null;
         }
-        return new RedisURI("rediss", (String) parts.get(0), Integer.valueOf((String) parts.get(1)));
+        return new RedisURI("redis", (String) parts.get(0), Integer.valueOf((String) parts.get(1)));
     }
 
 }
